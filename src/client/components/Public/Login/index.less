@@ -1,0 +1,21 @@
+@import '~Root/css/colors';
+@import '~Root/css/mixins';
+
+:local(.container) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+  input {
+    .input;
+  }
+
+  :local(.title) {
+    .title();
+    margin-bottom: 10px;
+  }
+
+}

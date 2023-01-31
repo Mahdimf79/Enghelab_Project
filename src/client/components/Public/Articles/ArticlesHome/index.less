@@ -1,0 +1,41 @@
+:local(.container) {
+  width: 100%;
+
+  > h1 {
+    text-align: center;
+    background: #222831;
+    width: auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #fff;
+  }
+}
+
+:local(.allarticle) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+  > div {
+    width: 23%;
+    margin: 20px;
+  }
+
+}
+
+@media (min-width: 120px) and (max-width: 580px) {
+
+
+:local(.allarticle) {
+    flex-direction: column;
+    margin-top: 20px;
+
+    > div {
+      width: 95%;
+      margin: 5px auto;
+    }
+  }
+
+}
